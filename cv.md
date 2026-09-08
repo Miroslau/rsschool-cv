@@ -76,3 +76,19 @@ class LRUCache {
     }
 }
 ```
+
+---
+
+## 6. Education
+
+### Gomel State Technical University P. O. Sukhoi
+* **Majority:** Information system and technologies
+* **Degree:** Bachelor degree
+* **Year:** 2016 - 2020
+
+
+---
+
+## 7. English
+
+* **Level:** <B2 (Upper-Intermediate)>
