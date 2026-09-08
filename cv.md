@@ -13,3 +13,9 @@
 My name is Miraslau. I am a React and React-Native developer with 5 years of commercial experience. When I’ve been working, I’ve had both large and small projects, including some development from scratch, which has given me a clear understanding of how to perform well both independently and as part of a team.
 
 I enjoy collaborating with a team and believe that clear communication is just as important as development skills. This involves not only developer interactions but also understanding business needs and the ability to suggest new ideas. It’s about working not just to ticket requirements, but also within the context of deadlines, writing clean and understandable code.
+
+## 3. Professional skills
+* **Programming Languages:** JavaScript, TypeScript
+* **Frameworks & libraries:** React, Next, React Native, Redux, Redux Toolkit, Redux-Thunk, Webpack, Vite
+* **Databases:** MySQL, PostgreSQL, MongoDB, Firebase.
+* **Source Control Systems:** Docker, Docker Compose, CI/CD.
