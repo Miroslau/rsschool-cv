@@ -11,12 +11,26 @@ body {
     padding: 0;
     font-family: "Inter", sans-serif;
     background: #FBFBFB;
+    overflow: auto;
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header, main, footer {
     width: 900px;
     max-width: 95%;
     margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -28,16 +42,100 @@ header {
 }
 
 header > img {
-    width: 88px;
-    height: 88px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
 header > h1 {
     max-width: max-content;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 35px;
     letter-spacing: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 25px;
+}
+
+.grid-item h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0;
+}
+
+.skills-block {
+    grid-column: 1 / 2;
+}
+
+.about-block {
+    grid-column: 2 / 5;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.about-block p {
+    color: #5C6779;
+}
+
+.about-block > section:last-child {
+    padding-top: 20px;
+}
+
+.code-example {
+    grid-column: 1 / 2;
+}
+
+.code-example-block {
+    padding: 12px 10px;
+    background: white;
+    border: 1px solid #EFF2F6;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.experience-block {
+    grid-column: 2 / 4;
+}
+
+.education-block {
+    grid-column: 4 / 5;
+}
+
+.block-item > h3 {
+    font-size: 14px;
+    padding-bottom: 6px;
+    margin: 0;
+}
+
+.block-item > p {
+    font-size: 14px;
+    padding-bottom: 6px;
+    margin: 0;
+    color: #5C6779;
+}
+
+.skills-list > li {
+    padding: 12px 10px;
+    background: white;
+    border: 1px solid #EFF2F6;
+    border-radius: 5px;
+    margin-bottom: 11px;
+}
+
+.experience-section, .education-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+}
+
+.education-section h2 {
+    line-height: 2;
+    font-size: 22px;
+    margin: 0;
 }
 

@@ -14,12 +14,107 @@
         <h1>Hello, I am Miraslau. <br>A Front-end Developer.</h1>
     </header>
     <main>
-        <div>skills</div>
-        <div>about me</div>
-        <div>follow me</div>
-        <div>Past experience</div>
-        <div>Education</div>
+        <aside class="grid-item skills-block">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+            </ul>
+        </aside>
+        <section class="grid-item about-block">
+            <h2>About me</h2>
+            <p>
+                My name is Miraslau. I am a React and React-Native developer with 5 years of commercial experience. When I’ve been working, I’ve had both large and small projects, including some development from scratch, which has given me a clear understanding of how to perform well both independently and as part of a team.
+            </p>
+            <p>
+                I enjoy collaborating with a team and believe that clear communication is just as important as development skills. This involves not only developer interactions but also understanding business needs and the ability to suggest new ideas. It’s about working not just to ticket requirements, but also within the context of deadlines, writing clean and understandable code.
+            </p>
+        </section>
+        <aside class="grid-item code-example">
+            <h2>Code example</h2>
+            <div class="code-example code-example-block">
+                <pre>
+ <code>class LRUCache {</code>
+    <code>private capacity: number;</code>
+    <code>private cache: Map&lt;number, number&gt;;</code>
+
+    <code>constructor(capacity: number) {</code>
+       <code>this.capacity = capacity;</code>
+       <code>this.cache = new Map();</code>
+    <code>}</code>
+
+    <code>get(key: number): number {</code>
+       <code>if (!this.cache.has(key)) return -1;</code>
+       <code>const value = this.cache.get(key);</code>
+
+       <code>this.cache.delete(key);</code>
+       <code>this.cache.set(key, value);</code>
+
+       <code>return value;</code>
+    <code>}</code>
+
+    <code>put(key: number, value: number): void {</code>
+       <code>if (this.cache.has(key)) {</code>
+         <code>this.cache.delete(key);</code>
+       <code>} else if (this.cache.size >= this.capacity) {</code>
+         <code>const oldValue = this.cache.keys().next().value;</code>
+         <code>this.cache.delete(oldValue);</code>
+       <code>}</code>
+
+       <code>this.cache.set(key, value);</code>
+    <code>}</code>
+ <code>}</code>
+                </pre>
+            </div>
+        </aside>
+        <section class="grid-item experience-block">
+            <h2>Past experience</h2>
+            <div class="experience-block experience-section">
+                <section class="block-item">
+                    <h3>React Developer</h3>
+                    <p>Innowise Group * Full-time</p>
+                    <p>Sep 2024 - Jul 2026</p>
+                    <p>Warsaw, Poland * On-site</p>
+                </section>
+                <section class="block-item">
+                    <h3>Software Engineer</h3>
+                    <p>PixelArtSoft * Full-time</p>
+                    <p>Jan 2024 - Aug 2024</p>
+                    <p>Gdańsk, Pomorskie, Poland * Remote</p>
+                </section>
+                <section class="block-item">
+                    <h3>Software Engineer</h3>
+                    <p>Godel Technologies Europe * Full-time</p>
+                    <p>Nov 2022 - Dec 2023</p>
+                    <p>Gdańsk, Pomorskie, Poland * Remote</p>
+                </section>
+                <section class="block-item">
+                    <h3>Software Engineer</h3>
+                    <p>iTechart Group * Full-time</p>
+                    <p>Jan 2021 - Oct 2022</p>
+                    <p>Gdańsk, Pomorskie, Poland * Remote</p>
+                </section>
+            </div>
+        </section>
+        <section class="grid-item education-block">
+            <h2>Education</h2>
+            <div class="education-block education-section">
+                <section class="block-item">
+                    <h3>Software Engineer Bachelor Degree</h3>
+                    <p>GSTU university</p>
+                    <p>2016 - 2020</p>
+                </section>
+
+                <section class="block-item">
+                    <h2>English Level</h2>
+                    <p>B2 (Upper-Intermediate)</p>
+                </section>
+            </div>
+        </section>
     </main>
-    <footer>footer</footer>
+    <footer></footer>
 </body>
 </html>
